@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site dorameira</title>
+</head>
+
+<body>
+    <h1> ✨Panelinha.com.br✨</h1>
+    <h3>Testando seu nivel de dorama</h3>
+    <br>
+    <img id="doramaUm" style="height: 350px; width: 350px;">
+    <br>
+    Dorama: <input placeholder="digite aqui" style="text-transform: uppercase;" id="nomeUm" />
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img id="doramaDois" style="height: 350px; width: 350px;">
+    <br>
+    Dorama: <input placeholder="digite aqui" style="text-transform: uppercase;" id="nomeDois" />
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img id="doramaTres" style="height: 350px; width: 350px;">
+    <br>
+    Dorama: <input placeholder="digite aqui" style="text-transform: uppercase;" id="nomeTres" />
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img id="doramaQuatro" style="height: 350px; width: 350px;">
+    <br>
+    Dorama: <input placeholder="digite aqui" style="text-transform: uppercase;" id="nomeQuatro" />
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <img id="doramaCinco" style="height: 350px; width: 350px;">
+    <br>
+    Dorama: <input placeholder="digite aqui" style="text-transform: uppercase;" id="nomeCinco" />
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img id="doramaSeis" style="height: 350px; width: 350px;">
+    <br>
+    Dorama: <input placeholder="digite aqui" style="text-transform: uppercase;" id="nomeSeis" />
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img id="doramaSete" style="height: 350px; width: 350px;">
+    <br>
+    Dorama: <input placeholder="digite aqui" style="text-transform: uppercase;" id="nomeSete" />
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img id="doramaOito" style="height: 350px; width: 350px;">
+    <br>
+    Dorama: <input placeholder="digite aqui" style="text-transform: uppercase;" id="nomeOito" />
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img id="doramaNove" style="height: 350px; width: 350px;">
+    <br>
+    Dorama: <input placeholder="digite aqui" style="text-transform: uppercase;" id="nomeNove" />
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img id="doramaDez" style="height: 350px; width: 350px;">
+    <br>
+    Dorama: <input placeholder="digite aqui" style="text-transform: uppercase;" id="nomeDez" />
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <button onclick="gerarRespostas()">Preencher Automaticamente </button>
+    <button onclick="salvar()">Salvar </button>
+    <br>
+    <br>
+    <br>
+    Total de respostas certas:<input id="campoContador" disabled />
+
+</body>
+<script>
+    const doramaUm = 'https://static1.purebreak.com.br/articles/7/97/88/7/@/387813-o-que-e-um-dorama-entenda-a-diferenca-e-diapo-3.jpeg'
+    document.getElementById("doramaUm").setAttribute('src', doramaUm);
+
+    const doramaDois = 'https://s2.glbimg.com/7oXEPpeysJLNfT1JXKcEeiaB01U=/620x413/top/e.glbimg.com/og/ed/f/original/2022/02/10/image_5XwiUqr.png'
+    document.getElementById("doramaDois").setAttribute('src', doramaDois);
+
+    const doramaTres = 'https://i0.wp.com/asiaon.com.br/wp-content/uploads/2023/05/jtbcdrama_343289039_3347066042211743_4002511600240513093_n.jpg?fit=1080%2C1080&ssl=1'
+    document.getElementById("doramaTres").setAttribute('src', doramaTres);
+
+    const doramaQuatro = 'https://sobresagas.com.br/wp-content/uploads/2022/09/alquimia-das-almas-o-que-esperar-da-2a-temporada-da-serie-estreia-enredo-elenco-e-mais.jpg'
+    document.getElementById("doramaQuatro").setAttribute('src', doramaQuatro);
+
+    const doramaCinco = 'https://sobresagas.com.br/wp-content/uploads/2022/08/uma-advogada-extraordinaria-7-curiosidades-sobre-a-serie-que-acaba-de-ser-renovada-pela-netflix.jpg'
+    document.getElementById("doramaCinco").setAttribute('src', doramaCinco);
+
+    const doramaSeis = 'https://40emais.com.br/wp-content/uploads/2022/06/thumbnails-26-1.jpg'
+    document.getElementById("doramaSeis").setAttribute('src', doramaSeis);
+
+    const doramaSete = 'https://sobresagas.com.br/wp-content/uploads/2021/12/vincenzo-1-e1640550659854.jpg'
+    document.getElementById("doramaSete").setAttribute('src', doramaSete);
+
+    const doramaOito = 'https://resumodasnovelas.online/wp-content/uploads/2023/08/the-k2-1-300x300.jpg'
+    document.getElementById("doramaOito").setAttribute('src', doramaOito);
+
+    const doramaNove = 'https://itslizzie.space/wp-content/uploads/2020/08/holo-meu-amor-na-netflix.jpg'
+    document.getElementById("doramaNove").setAttribute('src', doramaNove);
+
+    const doramaDez = 'https://img.quizur.com/f/img60ff97a5b430f9.14902638.jpg?lastEdited=1627363370'
+    document.getElementById("doramaDez").setAttribute('src', doramaDez);
+
+    function salvar() {
+        const nomeUm = document.getElementById("nomeUm")?.value?.toLocaleUpperCase();
+        const nomeDois = document.getElementById("nomeDois")?.value?.toLocaleUpperCase();
+        const nomeTres = document.getElementById("nomeTres")?.value?.toLocaleUpperCase();
+        const nomeQuatro = document.getElementById("nomeQuatro")?.value?.toLocaleUpperCase();
+        const nomeCinco = document.getElementById("nomeCinco")?.value?.toLocaleUpperCase();
+        const nomeSeis = document.getElementById("nomeSeis")?.value?.toLocaleUpperCase();
+        const nomeSete = document.getElementById("nomeSete")?.value?.toLocaleUpperCase();
+        const nomeOito = document.getElementById("nomeOito")?.value?.toLocaleUpperCase();
+        const nomeNove = document.getElementById("nomeNove")?.value?.toLocaleUpperCase();
+        const nomeDez = document.getElementById("nomeDez")?.value?.toLocaleUpperCase();
+
+        let contador = 0;
+
+
+        if (nomeUm === 'LOVE ALARM') {
+            contador = contador + 1;
+        }
+        if (nomeDois === 'POUSANDO NO AMOR') {
+            contador = contador + 1;
+        }
+        if (nomeTres === 'THE GOOD BAD MOTHER' || nomeTres === 'A BOA MÃE MÁ' || nomeTres === 'A BOA MAE MA') {
+            contador = contador + 1;
+        }
+        if (nomeQuatro === 'ALQUÍMIA DAS ALMAS' || nomeQuatro === 'ALCHEMY OF SOULS' || nomeQuatro === 'ALQUIMIA DAS ALMAS') {
+            contador = contador + 1;
+        }
+
+        if (nomeCinco === 'UMA ADVOGADA EXTRAORDINARIA' || nomeCinco === 'UMA ADVOGADA EXTRAORDINÁRIA') {
+            contador = contador + 1;
+        }
+
+        if (nomeSeis === 'PRETENDENTE SURPRESA') {
+            contador = contador + 1;
+        }
+
+        if (nomeSete === 'VINCENZO') {
+            contador = contador + 1;
+        }
+
+        if (nomeOito === 'THE K2') {
+            contador = contador + 1;
+        }
+
+
+        if (nomeNove === 'HOLO MEU AMOR') {
+            contador = contador + 1;
+        }
+
+        if (nomeDez === 'RUN TO YOU' || nomeDez === 'NA DIRECAO DO AMOR' || nomeDez === 'NA DIREÇÃO DO AMOR') {
+            contador = contador + 1;
+        }
+
+
+
+        document.getElementById("campoContador").setAttribute('value', contador);
+
+        const mensagem = 'Você acertou ' + contador + ' de dez questões';
+        alert(mensagem);
+
+    }
+
+    function gerarRespostas() {
+        document.getElementById("nomeUm")?.setAttribute('value', 'LOVE ALARM')
+        document.getElementById("nomeDois")?.setAttribute('value', 'POUSANDO NO AMOR')
+        document.getElementById("nomeTres")?.setAttribute('value', 'THE GOOD BAD MOTHER')
+        document.getElementById("nomeQuatro")?.setAttribute('value', 'ALQUIMIA DAS ALMAS')
+        document.getElementById("nomeCinco")?.setAttribute('value', 'UMA ADVOGADA EXTRAORDINARIA')
+        document.getElementById("nomeSeis")?.setAttribute('value', 'PRETENDENTE SURPRESA')
+        document.getElementById("nomeSete")?.setAttribute('value', 'VINCENZO')
+        document.getElementById("nomeOito")?.setAttribute('value', 'THE K2')
+        document.getElementById("nomeNove")?.setAttribute('value', 'HOLO MEU AMOR')
+        document.getElementById("nomeDez")?.setAttribute('value', 'RUN TO YOU')
+
+    }
+</script>
+
+</html>
